@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Software Tools\\FundamentalsOfDistributedComputing\\Laboratory work 4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1A5245F5-B0D7-4F8D-8799-942D4030A8E7}|Laboratory work 4\\Laboratory work 4.vcxproj|D:\\Software Tools\\FundamentalsOfDistributedComputing\\Laboratory work 4\\Laboratory work 4\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1A5245F5-B0D7-4F8D-8799-942D4030A8E7}|Laboratory work 4\\Laboratory work 4.vcxproj|solutionrelative:Laboratory work 4\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "D:\\Software Tools\\FundamentalsOfDistributedComputing\\Laboratory work 4\\Laboratory work 4\\Source.cpp",
+              "RelativeDocumentMoniker": "Laboratory work 4\\Source.cpp",
+              "ToolTip": "D:\\Software Tools\\FundamentalsOfDistributedComputing\\Laboratory work 4\\Laboratory work 4\\Source.cpp",
+              "RelativeToolTip": "Laboratory work 4\\Source.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-16T14:04:54.494Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

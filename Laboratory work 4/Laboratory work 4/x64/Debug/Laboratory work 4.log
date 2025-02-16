@@ -1,0 +1,54 @@
+﻿  Source.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(1714,98): warning C4244: аргумент: преобразование "unsigned __int64" в "int", возможна потеря данных
+  (компиляция исходного файла "Source.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(1714,98):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          D:\Software Tools\FundamentalsOfDistributedComputing\Laboratory work 4\Laboratory work 4\Source.cpp(67,11):
+          выполняется компиляция ссылки на экземпляр шаблон функции "void std::vector<std::thread,std::allocator<std::thread>>::emplace_back<void(__cdecl &)(BarrierSynchronization &,int),std::reference_wrapper<BarrierSynchronization>,size_t&>(void (__cdecl &)(BarrierSynchronization &,int),std::reference_wrapper<BarrierSynchronization> &&,size_t &)"
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(858,24):
+          выполняется компиляция ссылки на экземпляр шаблон функции "_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_one_at_back<void(__cdecl &)(BarrierSynchronization &,int),std::reference_wrapper<BarrierSynchronization>,size_t&>(void (__cdecl &)(BarrierSynchronization &,int),std::reference_wrapper<BarrierSynchronization> &&,size_t &)"
+          with
+          [
+              _Ty=std::thread
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(776,20):
+          выполняется компиляция ссылки на экземпляр шаблон функции "_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<void(__cdecl &)(BarrierSynchronization &,int),std::reference_wrapper<BarrierSynchronization>,size_t&>(void (__cdecl &)(BarrierSynchronization &,int),std::reference_wrapper<BarrierSynchronization> &&,size_t &)"
+          with
+          [
+              _Ty=std::thread
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(794,27):
+          выполняется компиляция ссылки на экземпляр шаблон функции "void std::_Default_allocator_traits<_Alloc>::construct<_Ty,void(__cdecl &)(BarrierSynchronization &,int),std::reference_wrapper<BarrierSynchronization>,size_t&>(_Alloc &,_Objty *const ,void (__cdecl &)(BarrierSynchronization &,int),std::reference_wrapper<BarrierSynchronization> &&,size_t &)"
+          with
+          [
+              _Alloc=std::allocator<std::thread>,
+              _Ty=std::thread,
+              _Objty=std::thread
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xmemory(700,82):
+          выполняется компиляция ссылки на экземпляр шаблон функции "std::thread::thread<void(__cdecl &)(BarrierSynchronization &,int),_Ty,size_t&,0>(_Fn,_Ty &&,size_t &)"
+          with
+          [
+              _Ty=std::reference_wrapper<BarrierSynchronization>,
+              _Fn=void (__cdecl &)(BarrierSynchronization &,int)
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\thread(93,9):
+          выполняется компиляция ссылки на экземпляр шаблон функции "void std::thread::_Start<void(__cdecl &)(BarrierSynchronization &,int),_Ty,size_t&>(_Fn,_Ty &&,size_t &)"
+          with
+          [
+              _Ty=std::reference_wrapper<BarrierSynchronization>,
+              _Fn=void (__cdecl &)(BarrierSynchronization &,int)
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\thread(76,40):
+          выполняется компиляция ссылки на экземпляр шаблон функции "unsigned int (__cdecl *std::thread::_Get_invoke<std::thread::_Start::_Tuple,0,1,2>(std::integer_sequence<size_t,0,1,2>) noexcept)(void *)"
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\thread(67,17):
+          выполняется компиляция ссылки на экземпляр шаблон функции "unsigned int std::thread::_Invoke<std::thread::_Start::_Tuple,0,1,2>(void *) noexcept"
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\thread(60,14):
+          выполняется компиляция ссылки на экземпляр шаблон функции "void std::invoke<void(__cdecl *)(BarrierSynchronization &,int),std::reference_wrapper<BarrierSynchronization>,unsigned __int64>(_Callable &&,_Ty1 &&,unsigned __int64 &&) noexcept(false)"
+          with
+          [
+              _Callable=void (__cdecl *)(BarrierSynchronization &,int),
+              _Ty1=std::reference_wrapper<BarrierSynchronization>
+          ]
+  
+  Laboratory work 4.vcxproj -> D:\Software Tools\FundamentalsOfDistributedComputing\Laboratory work 4\x64\Debug\Laboratory work 4.exe
