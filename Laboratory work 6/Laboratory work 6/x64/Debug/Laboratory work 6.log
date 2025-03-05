@@ -1,0 +1,3 @@
+﻿  Source.cpp
+D:\Software Tools\FundamentalsOfDistributedComputing\Laboratory work 6\Laboratory work 6\Source.cpp(92,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Laboratory work 6.vcxproj -> D:\Software Tools\FundamentalsOfDistributedComputing\Laboratory work 6\x64\Debug\Laboratory work 6.exe
