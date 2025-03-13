@@ -10,21 +10,31 @@ using namespace std;
 void shellSort(vector<double>& arr) {
     int size = arr.size();
 
-    // Начинаем с большого шага, затем уменьшаем его
     for (int gap = size / 2; gap > 0; gap /= 2) {
-        // Применяем сортировку вставками для каждого подмассива
         for (int currentIndex = gap; currentIndex < size; currentIndex++) {
             double currentValue = arr[currentIndex];
             int previousIndex;
 
-            // Сдвигаем элементы, пока не найдем правильную позицию для currentValue
             for (previousIndex = currentIndex; previousIndex >= gap && arr[previousIndex - gap] > currentValue; previousIndex -= gap) {
                 arr[previousIndex] = arr[previousIndex - gap];
             }
 
-            // Вставляем currentValue на правильную позицию
             arr[previousIndex] = currentValue;
         }
+    }
+}
+
+void insertSort(vector<double>& arr, int start, int gap) {
+    for (int currentIndex = start + gap; currentIndex < arr.size(); currentIndex += gap) {
+        double currentValue = arr[currentIndex];
+        int previousIndex = currentIndex;
+
+        while (previousIndex >= gap && arr[previousIndex - gap] > currentValue) {
+            arr[previousIndex] = arr[previousIndex - gap];
+            previousIndex -= gap;
+        }
+
+        arr[previousIndex] = currentValue;
     }
 }
 
@@ -32,24 +42,24 @@ void shellSort(vector<double>& arr) {
 void parallelShellSort(vector<double>& arr) {
     int size = arr.size();
 
-    // Начинаем с большого шага, затем уменьшаем его
     for (int gap = size / 2; gap > 0; gap /= 2) {
-        // Анализатор кода Visual Studio не способен анализировать параллельные регионы OpenMP,
-        // так как они обрабатываются на этапе выполнения, а не компиляции - поэтому получаем предупреждение
         #pragma omp parallel for
-        for (int currentIndex = gap; currentIndex < size; currentIndex++) {
-            double currentValue = arr[currentIndex];
-            int previousIndex;
-
-            // Сдвигаем элементы, пока не найдем правильную позицию для currentValue
-            for (previousIndex = currentIndex; previousIndex >= gap && arr[previousIndex - gap] > currentValue; previousIndex -= gap) {
-                arr[previousIndex] = arr[previousIndex - gap];
-            }
-
-            // Вставляем currentValue на правильную позицию
-            arr[previousIndex] = currentValue;
+        for (int i = 0; i < gap; ++i) {
+            insertSort(arr, i, gap);
         }
     }
+}
+
+bool isSorted(const vector<double>& arr) {
+    for (int i = 0; i < arr.size() - 1; ++i) {
+        if (arr[i] > arr[i + 1]) {
+            cout << "Массив не отсортирован!" << endl;
+            return false;
+        }
+    }
+
+    cout << "Массив отсортирован!" << endl;
+    return true;
 }
 
 int main() {
@@ -70,11 +80,13 @@ int main() {
     shellSort(arrCopy);
     double end = omp_get_wtime();
     cout << "Время последовательной сортировки Шелла: " << end - start << " секунд\n";
+    isSorted(arrCopy);
 
     start = omp_get_wtime();
     parallelShellSort(arr);
     end = omp_get_wtime();
     cout << "Время параллельной сортировки Шелла: " << end - start << " секунд\n";
+    isSorted(arr);
 
     return 0;
 }

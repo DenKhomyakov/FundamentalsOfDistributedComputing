@@ -28,6 +28,7 @@ double integrateParallel(double a, double b, int n) {
     // так как они обрабатываются на этапе выполнения, а не компиляции - поэтому получаем предупреждение
     #pragma omp parallel for reduction(+:sum)
     for (int i = 0; i < n; i++) {
+        cout << omp_get_num_threads() << endl;
         double x = a + i * h;
         sum += f(x);
     }
@@ -40,7 +41,7 @@ int main() {
 
     double a = -2.0;
     double b = 1.0;
-    int n = 1000000;
+    int n = 10000000000;
 
     double start;
     double end;

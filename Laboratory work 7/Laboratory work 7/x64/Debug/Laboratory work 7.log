@@ -1,4 +1,4 @@
 ﻿  Source.cpp
 D:\Software Tools\FundamentalsOfDistributedComputing\Laboratory work 7\Laboratory work 7\Source.cpp(11,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-D:\Software Tools\FundamentalsOfDistributedComputing\Laboratory work 7\Laboratory work 7\Source.cpp(33,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Software Tools\FundamentalsOfDistributedComputing\Laboratory work 7\Laboratory work 7\Source.cpp(43,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
   Laboratory work 7.vcxproj -> D:\Software Tools\FundamentalsOfDistributedComputing\Laboratory work 7\x64\Debug\Laboratory work 7.exe

@@ -1,2 +1,4 @@
 ﻿  Source.cpp
+D:\Software Tools\FundamentalsOfDistributedComputing\Laboratory work 8\Laboratory work 8\Source.cpp(44,11): warning C4305: инициализация: усечение из "__int64" в "int"
+D:\Software Tools\FundamentalsOfDistributedComputing\Laboratory work 8\Laboratory work 8\Source.cpp(44,13): warning C4309: инициализация: усечение константного значения
   Laboratory work 8.vcxproj -> D:\Software Tools\FundamentalsOfDistributedComputing\Laboratory work 8\x64\Debug\Laboratory work 8.exe
